@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
-const Wowww = () => {
+const Carousel = () => {
   return (
     <div className="carousel-container">
       <div
@@ -8,6 +9,7 @@ const Wowww = () => {
         className="carousel slide max-w-full mx-auto"
         data-bs-ride="carousel"
       >
+        {/* Carousel Indicators */}
         <div className="carousel-indicators">
           <button
             type="button"
@@ -43,6 +45,7 @@ const Wowww = () => {
           ></button>
         </div>
 
+        {/* Carousel Inner */}
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
@@ -81,6 +84,7 @@ const Wowww = () => {
           </div>
         </div>
 
+        {/* Carousel Controls */}
         <button
           className="carousel-control-prev"
           type="button"
@@ -110,4 +114,4 @@ const Wowww = () => {
   );
 };
 
-export default Wowww;
+export default Carousel;
