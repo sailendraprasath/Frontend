@@ -69,3 +69,9 @@ button:focus-visible {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .icon_wrapper {
+    @apply border border-white rounded-full w-[35px] h-[35px] grid place-items-center text-[22px];
+  }
+}
