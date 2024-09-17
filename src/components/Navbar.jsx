@@ -18,10 +18,10 @@ const Navbar = () => {
   return (
     <>
       <div className="p-3 bg-Title"></div>
-      <nav className="bg-bg1 p-4 ">
-        <div className="container mx-auto flex items-center justify-between">
+      <nav className="bg-bg1 p-4">
+        <div className="container mx-auto flex items-center justify-between max-sm:pl-6 ">
           {/* Logo */}
-          <img src={Rose} alt="" />
+          <img src={Rose} alt="" className="max-sm:w-[150px]" />
           {/* Input Field */}
           <div className="flex items-center gap-2 max-sm:hidden ">
             <input
@@ -35,7 +35,7 @@ const Navbar = () => {
           </div>
 
           {/* Menu Links (Large screens) */}
-          <div className="flex items-center   gap-[40px]">
+          <div className="flex items-center max-sm:grid max-sm:grid-cols-2 gap-[40px]">
             <div
               onClick={() => SetMsearch(!Msearch)}
               className="icon_wrapper hover:text-black  hover:bg-white max-sm:block hidden  "
@@ -107,7 +107,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
       </nav>
       {Msearch ? (
-        <div className="max-sm:block hidden ">
+        <div className="max-sm:block hidden">
           <input
             type="text"
             placeholder="search products"
@@ -116,7 +116,7 @@ const Navbar = () => {
           <IoIosArrowUp
             onClick={() => SetMsearch(!Msearch)}
             size={30}
-            className="absolute right-3 top-[190px] border-2 border-black rounded-full cursor-pointer scale-90"
+            className="absolute right-4 top-60  cursor-pointer duration-700 border-2 rounded-full border-black scale-90 transition hover:scale-110 hover:-rotate-180  hover:duration-300"
           />
         </div>
       ) : (
