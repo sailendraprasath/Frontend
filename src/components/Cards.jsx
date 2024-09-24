@@ -1,16 +1,16 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Vegetables from "../assets/vegitables.png";
 
 const Cards = () => {
-  const [selectData, setSelectData] = useState({}); // Track selected amount for each card
+  // const [selectData, setSelectData] = useState({}); // Track selected amount for each card
 
-  const handleSelectData = (e, cardId) => {
-    const { value } = e.target;
-    setSelectData((prevData) => ({
-      ...prevData,
-      [cardId]: value, // Store the selected amount using card ID
-    }));
-  };
+  // const handleSelectData = (e, cardId) => {
+  //   const { value } = e.target;
+  //   setSelectData((prevData) => ({
+  //     ...prevData,
+  //     [cardId]: value, // Store the selected amount using card ID
+  //   }));
+  // };
 
   const cards = [
     {
@@ -87,8 +87,8 @@ const Cards = () => {
               alt={card.title}
               className="w-full h-[250px] object-cover rounded-md"
             />
-            <div className="flex space-x-[60px] mt-4">
-              {/* Amount Selection */}
+            {/* <div className="flex space-x-[60px] mt-4">
+             
               <select
                 name="amount"
                 id="amount"
@@ -107,7 +107,7 @@ const Cards = () => {
               <div>
                 <p className="mt-2">{selectData[card.id] || "None"}</p>
               </div>
-            </div>
+            </div> */}
 
             <h2 className="text-lg text-center font-semibold mt-4">
               {card.title}
