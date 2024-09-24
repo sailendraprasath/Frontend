@@ -7,6 +7,8 @@ import { MdContacts } from "react-icons/md";
 import { Link } from "react-router-dom";
 import WhishCount from "./WhishCount";
 import { FcAbout } from "react-icons/fc";
+import { FaShoppingCart } from "react-icons/fa";
+import CartCount from "../components/CartCount";
 
 const Menu = () => {
   const [nav, setNav] = useState(false);
@@ -55,7 +57,18 @@ const Menu = () => {
                 <Link to="/About2">About</Link>
               </li>
 
+              {/* i put here Cart  */}
               <div className="flex flex-row space-x-3 pt-3">
+                <div className="icon_wrapper relative hover:text-black   hover:bg-white ">
+                  <FaShoppingCart className="-ml-2 cursor-pointer scale-110" />
+                  <CartCount className="w-[25px] h-[25px]   " />
+                </div>
+                <div>
+                  <h1>Cart</h1>
+                </div>
+              </div>
+
+              <div className="flex flex-row space-x-3 pt-6">
                 <div className="icon_wrapper relative hover:text-black   hover:bg-white ">
                   <FaHeart className="-ml-2 cursor-pointer scale-110" />
                   <WhishCount className="w-[25px] h-[25px]   " />

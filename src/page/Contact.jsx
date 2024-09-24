@@ -2,6 +2,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import Navbar from "../components/Navbar";
+import FooterShop from "./FooterShop";
 
 const Contact = () => {
   return (
@@ -9,7 +10,7 @@ const Contact = () => {
       <Navbar />
       <div className="bg-rose-300 p-10">
         <div className="flex  mx-auto items-center  flex-col container font-welcome space-y-3 space-x-6 ">
-          <h1 className="text-5xl font-extrabold text-Contact1  ">
+          <h1 className="text-5xl max-sm:text-3xl font-extrabold text-Contact1  ">
             Contact US
           </h1>
           <p className="text-center   max-sm:text-[15px]  text-3xl">
@@ -26,15 +27,17 @@ const Contact = () => {
       </div>
       <div className="bg-rose-300 p-12">
         <div className="flex  mx-auto items-center  flex-col container font-welcome space-y-3 space-x-6 ">
-          <h1 className="text-5xl font-extrabold text-Contact1  ">
+          <h1 className="text-5xl max-sm:text-3xl font-extrabold text-Contact1  ">
             Opening hours
           </h1>
-          <p className="text-3xl max-sm:text-xl">Monday - Sunday: 9am - 10pm</p>
+          <p className="text-3xl max-sm:text-base">
+            Monday - Sunday: 9am - 10pm
+          </p>
         </div>
       </div>
       <div className="p-10">
         <div className="flex  mx-auto items-center  flex-col container font-welcome space-y-5 space-x-6 ">
-          <h1 className="text-4xl font-extrabold text-black ">
+          <h1 className="text-4xl max-sm:text-2xl font-extrabold text-black ">
             Rose Super Market
           </h1>
           <p>Contact @TheRoseSuperMarket.com </p>
@@ -42,7 +45,7 @@ const Contact = () => {
       </div>
       <div className="bg-rose-300 p-10">
         <div className="flex  mx-auto items-center  flex-col container font-welcome space-y-3 space-x-6 ">
-          <h1 className="text-5xl font-extrabold text-Contact1  ">
+          <h1 className="text-5xl max-sm:text-3xl font-extrabold text-Contact1  ">
             Social Media
           </h1>
           <div className="flex flex-row text-4xl space-x-8">
@@ -52,6 +55,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <FooterShop />
     </>
   );
 };
