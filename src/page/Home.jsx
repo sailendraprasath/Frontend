@@ -1,6 +1,6 @@
 import Cards from "../components/Cards";
 import Navbar from "../components/Navbar";
-import SlideCard from "../components/SlideCards";
+// import SlideCard from "../components/SlideCards";
 // import Carousel from "../components/Carousel";
 // import Card from "../components/Card";
 import Welcome from "../components/Welcome";
@@ -12,7 +12,7 @@ const Home = () => {
       <div>
         <Navbar />
         <Welcome />
-        <SlideCard />
+        {/* <SlideCard /> */}
         <Cards />
         <FooterShop />
         {/* <Carousel /> */}
